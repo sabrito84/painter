@@ -1,0 +1,329 @@
+/*
+Responsive CSS
+*/
+@media screen and (max-width: 1200px){
+    .mid-content{
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .service-list .service-image{
+        width: 16%;
+        height: auto;
+    }
+    .service-list .service-detail{
+        width: 80%;
+    }
+
+    .team-tab{
+        padding: 0 50px;
+    }
+
+    .social-icons{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    #masthead .flex-box{
+        display: block;
+    }
+    #site-logo{
+        width: 80%;
+    }
+    .main-navigation{
+        width: 40px;
+    }
+    .main-navigation > ul{
+        display: none;
+    }
+    .menu-toggle{
+        display: block;
+        height: 40px;
+        width: 40px;
+        background: url(../images/menu.png) no-repeat center #E3633B;
+        text-indent: -9999px;
+        cursor: pointer;
+    }
+    .logo-top #site-logo{
+        float: left;
+        text-align: left;
+    }
+    .logo-top .main-navigation{
+        float: right;
+    }
+
+    .logo-top .menu-toggle{
+        float: right;
+    }
+    .main-navigation{
+        text-align: center;
+    }
+    .main-navigation > ul{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #E3633B;
+        padding: 10px 0;
+        text-align: center;
+    }
+    .main-navigation > ul > li{
+        display: inline-block;
+        float: none;
+    }
+    .main-navigation > ul > li > a{
+        color:#FFF;
+        padding: 10px;
+    }
+    .main-navigation > ul > li.current a, 
+    .main-navigation li:hover > a,
+    .main-navigation .current_page_item > a, 
+    .main-navigation .current-menu-item > a{
+        color: #EEE;
+    }
+    .main-navigation > ul > li > a:hover, .main-navigation > ul > li.current a {
+        color: #ccc !important;        
+    }
+    .slider-caption{
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+    #main-slider{
+        min-height: 0;
+    }
+}
+
+@media screen and (max-width: 768px){
+    body:not(.home) .main-navigation .current_page_item > a, body:not(.home) .main-navigation .current-menu-item > a{
+        color: #FFF;
+    }
+    h1{
+        font-size: 24px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    h3{
+        font-size: 18px;
+    }
+    h4{
+        font-size: 16px;
+    }
+    h5{
+        font-size: 14px;
+    }
+    h6{
+        font-size: 12px;
+    }
+    .parallax-section h1{
+        font-size: 34px;
+    }
+    .slider-caption .caption-title{
+        font-size: 30px;
+    }
+    .slider-caption .caption-description{
+        font-size: 20px;
+    }
+    .service-list{
+        width: 100%;
+    }
+    .portfolio-list{
+        width: 50%;
+    }
+
+    .team-image img{
+        width: 100%;
+    }
+
+    .portfolio-listing a:nth-child(3n+1){
+        clear: none;
+    }
+
+    .portfolio-listing a:nth-child(2n+1){
+        clear: both;
+    }
+
+    .blog-listing .blog-list{
+        width: 80%;
+        margin: 0 auto 20px;
+        float: none;
+        display: block;
+    }
+    .blog-list .blog-image{
+        text-align: center;
+    }
+    .parallax-section input[type="text"], 
+    .parallax-section input[type="email"], 
+    .parallax-section input[type="url"], 
+    .parallax-section input[type="password"], 
+    .parallax-section input[type="search"], 
+    .parallax-section input[type="tel"], 
+    .parallax-section textarea{
+        width: 80%;
+    }
+    .service-listing .service-list{
+        float: none;
+    }
+    .top-footer .top-footer-wrap{
+        margin-left: 0;
+    }
+    .footer-block{
+        width: 100% !important;
+        margin-left: 0 !important;
+        margin-bottom: 25px;
+        float: none;
+    }
+    .footer-block:last-child{
+        margin-bottom: 0;
+    }
+    .copy-right, .site-info{
+        float: none;
+        text-align: center;
+    }
+    .main-navigation > ul{
+        padding: 0;
+        z-index: 99;
+    }
+    .main-navigation > ul > li{
+        display: block;
+        border-bottom: 1px solid #DB5E39;
+    }
+    .main-navigation ul ul {
+        background: #db5e39;
+        position: static;
+        font-size: 15px;
+        display: none;
+        float: none;
+    }
+    #primary, #secondary{
+        float: none;
+        width: 100%;
+    }
+    #main-slider .bx-wrapper .bx-controls-direction a{
+        display: none;
+    }
+    .next-page{
+        display: none;
+    }
+    .main-navigation ul ul a{
+        color: #FFF;
+    }
+    .main-navigation ul ul li a{
+        padding: 10px 0;
+        border: 0;
+    }
+    .main-navigation ul ul{
+        box-shadow: none;
+    }
+    .parallax-section{
+        background-attachment: scroll !important;
+        background-repeat: repeat !important;
+    }
+    .parallax-section.blank_template{
+        height: 40vh;
+        min-height: none;
+    }
+    body.parallax-on #masthead{
+        position: relative;
+    }
+    #content{
+        padding-top: 0 !important;
+    }
+    #main-slider .slick-arrow{
+        display: none !important;
+    }
+    .slider-caption{
+        padding: 0;
+    }
+    .logo-top .main-navigation ul ul li{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 480px){
+    .parallax-section h1{
+        font-size: 30px;
+    }
+    .service-list.odd .service-image{
+        float: left;
+    }
+    .service-list.odd .service-detail{
+        float: right;
+    }
+    .service-listing .service-list{
+        text-align: left;
+    }
+    .team-tab{
+        max-width: 250px;
+        margin: 0 auto;
+    }
+    .team-big-image{
+        display: none;
+    }
+    .team-detail{
+        float: none;
+        width: auto;
+    }
+    .team-image{
+        height: auto;
+    }
+    .team-tab .bx-wrapper .bx-viewport{
+        border-radius: 0;
+    }
+    .portfolio-list{
+        width: 100%;
+    }
+    .blog-listing .blog-list{
+        width: 100%;
+    }
+    .parallax-section input[type="text"], 
+    .parallax-section input[type="email"], 
+    .parallax-section input[type="url"], 
+    .parallax-section input[type="password"], 
+    .parallax-section input[type="search"], 
+    .parallax-section input[type="tel"], 
+    .parallax-section textarea{
+        width: 100%;
+    }
+
+    .team-content{
+        margin-top: 30px;
+    }
+    #site-logo,
+    .logo-top #site-logo{
+        width: 80%;
+        text-align:left;
+    }
+    .slider-caption{
+        display: none;
+    }
+
+    .hentry,
+    #comments,
+    #secondary .widget{
+        padding: 20px;
+    }
+
+    .entry-thumb{
+        margin: -20px -20px 30px;
+    }
+
+    .comment-navigation [class*='nav-'], 
+    .paging-navigation [class*='nav-'], 
+    .post-navigation [class*='nav-'], 
+    .posts-navigation [class*='nav-']{
+        width: 100%;
+        float: none;
+    }
+
+}
+
+
+@media screen and (min-width: 1001px){
+    .main-navigation > ul{
+        display: block !important;
+    }
+    .logo-top .main-navigation > ul{
+        display: inline-block !important;
+    }
+}
